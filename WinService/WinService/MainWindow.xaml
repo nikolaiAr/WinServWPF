@@ -1,0 +1,14 @@
+﻿<Window x:Class="WinService.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="462" Width="918" Loaded="Window_Loaded">
+    <Grid Margin="0,0,14,14">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="list" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="550" SelectionChanged="list_SelectionChanged"/>
+        <Button x:Name="butStart" Content="запустить" HorizontalAlignment="Right" Margin="0,184,176,0" VerticalAlignment="Top" Width="75" Click="butStart_Click"/>
+        <TextBox x:Name="text" HorizontalAlignment="Right" Height="160" Margin="574,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+        <Button x:Name="butStop" Content="остановить" HorizontalAlignment="Right" Margin="0,184,46,0" VerticalAlignment="Top" Width="75" Click="butStop_Click"/>
+    </Grid>
+</Window>
